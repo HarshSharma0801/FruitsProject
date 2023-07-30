@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 
 app.use(express.json());
+//momgoDB atlas connection
 mongoose.connect('mongodb+srv://Harsh:EcP7XcFo03xbJQvy@test.gd2ldlk.mongodb.net/',
   {
     useNewUrlParser: true,
