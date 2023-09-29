@@ -4,12 +4,14 @@ const Router = require("./routes")
 const app = express();
 
 app.use(express.json());
-mongoose.connect('mongodb+srv://Harsh:EcP7XcFo03xbJQvy@test.gd2ldlk.mongodb.net/',
+
+mongoose.connect('mongodb+srv://Harsh2:dragonite1@forprojects.wjbiut0.mongodb.net/SyncWiz',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
   }
 );
+
 const db = mongoose.connection;
 db.on("error",function () {
   console.log("Error");
